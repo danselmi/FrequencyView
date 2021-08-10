@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxDialog" name="DevConnDialog">
+		<title>Connect to Device</title>
+		<id_arg>0</id_arg>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxStaticBoxSizer" variable="StaticBoxSizer1" member="no">
+					<label>Choose the driver</label>
+					<object class="sizeritem">
+						<object class="wxChoice" name="ID_CHOICE_DRIVER" variable="ChoiceDriver" member="yes">
+							<selection>0</selection>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxStaticBoxSizer" variable="StaticBoxSizer2" member="no">
+					<label>Choose the interface</label>
+					<orient>wxVERTICAL</orient>
+					<object class="sizeritem">
+						<object class="wxRadioButton" name="ID_RADIOBUTTON_USB" variable="RadioButtonUsb" member="yes">
+							<label>USB</label>
+						</object>
+						<flag>wxALL|wxALIGN_LEFT</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxRadioButton" name="ID_RADIOBUTTON_SERIAL" variable="RadioButtonSerialport" member="yes">
+							<label>Serial Port</label>
+						</object>
+						<flag>wxALL|wxALIGN_LEFT</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+							<object class="sizeritem">
+								<object class="wxChoice" name="ID_CHOICE_SERIALPORT" variable="ChoiceSerialport" member="yes" />
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>2</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxComboBox" name="ID_COMBOBOX_BAUDRATE" variable="ComboBoxBaudrate" member="yes">
+									<content>
+										<item>921600</item>
+										<item>112500</item>
+										<item>57600</item>
+										<item>19200</item>
+										<item>9600</item>
+									</content>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+									<label>baud</label>
+								</object>
+								<flag>wxTOP|wxBOTTOM|wxRIGHT|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+							</object>
+						</object>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxRadioButton" name="ID_RADIOBUTTON_TCP" variable="RadioButtonTcp" member="yes">
+							<label>TCP/IP</label>
+						</object>
+						<flag>wxALL|wxALIGN_LEFT</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+							<object class="sizeritem">
+								<object class="wxTextCtrl" name="ID_TEXTCTRL_HOST" variable="TextCtrlHost" member="yes">
+									<value>127.0.0.1</value>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>2</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxSpinCtrl" name="ID_SPINCTRL_PORTNR" variable="SpinCtrlPortnr" member="yes">
+									<value>4242</value>
+									<max>65535</max>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+								<option>1</option>
+							</object>
+							<object class="sizeritem">
+								<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="yes">
+									<label>protocol</label>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+							</object>
+							<object class="sizeritem">
+								<object class="wxChoice" name="ID_CHOICE_PROTOCOL" variable="ChoiceProtocol" member="yes">
+									<content>
+										<item>Raw-TCP</item>
+										<item>VXI</item>
+									</content>
+									<selection>0</selection>
+								</object>
+								<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+								<border>5</border>
+							</object>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_LEFT</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxStaticBoxSizer" variable="StaticBoxSizer3" member="no">
+					<label>Scan for devices</label>
+					<object class="sizeritem">
+						<object class="wxButton" name="ID_BUTTON_SCAN" variable="ButtonScan" member="yes">
+							<label>Scan for devices using driver above</label>
+						</object>
+						<flag>wxALL|wxALIGN_TOP</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxStaticBoxSizer" variable="StaticBoxSizer4" member="no">
+					<label>Select the device</label>
+					<object class="sizeritem">
+						<object class="wxListBox" name="ID_LISTBOX_DEVICE" variable="ListBoxDevice" member="yes">
+							<default>-1</default>
+							<handler function="onListBoxDeviceDClick" entry="EVT_LISTBOX_DCLICK" />
+						</object>
+						<flag>wxALL|wxEXPAND</flag>
+						<border>5</border>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+			</object>
+			<object class="sizeritem">
+				<object class="wxStdDialogButtonSizer" variable="StdDialogButtonSizer1" member="no">
+					<object class="button">
+						<object class="wxButton" name="wxID_OK">
+							<label></label>
+						</object>
+					</object>
+					<object class="button">
+						<object class="wxButton" name="wxID_CANCEL">
+							<label></label>
+						</object>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND</flag>
+				<border>5</border>
+			</object>
+		</object>
+	</object>
+</wxsmith>

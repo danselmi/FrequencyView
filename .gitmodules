@@ -1,0 +1,3 @@
+[submodule "wxplotctrl"]
+	path = wxplotctrl
+	url = https://github.com/danselmi/wxplotctrl.git

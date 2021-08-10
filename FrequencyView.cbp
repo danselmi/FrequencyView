@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FrequencyView" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FrequencyView" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DHAS_SPECTRUM_ANALYZER" />
+				</Compiler>
+				<Linker>
+					<Add option="`pkg-config --libs fftw3`" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FrequencyView" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DHAS_SPECTRUM_ANALYZER" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`pkg-config --libs fftw3`" />
+				</Linker>
+			</Target>
+			<Target title="wxFormatValidator">
+				<Option output="bin/Debug/wxFormatValidator" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="wxRubberband">
+				<Option output="bin/Debug/FrequencyView" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="wxRubberband/include" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`wx-config --cflags`" />
+			<Add option="`pkg-config glib-2.0 --cflags`" />
+			<Add option="`pkg-config glibmm-2.4 --cflags`" />
+			<Add option="`pkg-config libsigrokcxx --cflags`" />
+			<Add option="`pkg-config --cflags --libs gtk+-2.0`" />
+			<Add option="-DwxPLOTCTRL_FAST_GRAPHICS=0" />
+			<Add directory="wxplotctrl/wxplotctrl/include" />
+			<Add directory="wxplotctrl/wxthings/include" />
+		</Compiler>
+		<Linker>
+			<Add option="`wx-config --libs all`" />
+			<Add option="`pkg-config glib-2.0 --libs`" />
+			<Add option="`pkg-config glibmm-2.4 --libs`" />
+			<Add option="`pkg-config libsigrokcxx --libs`" />
+		</Linker>
+		<Unit filename="CenterFreqDialog.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="CenterFreqDialog.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="DataFeeder.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="DataFeeder.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="DevConnDialog.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="DevConnDialog.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FftAnalyzerOptionsDialog.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FftAnalyzerOptionsDialog.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FftSessionPanel.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FftSessionPanel.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FrequencyViewApp.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FrequencyViewMain.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FrequencyViewMain.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="ImportDataFeeder.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+			<Option target="wxRubberband" />
+		</Unit>
+		<Unit filename="ImportDataFeeder.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="ImportOptionsDialog.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="ImportOptionsDialog.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="ImportSessionPanel.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="ImportSessionPanel.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="ImportSessionThread.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="ImportSessionThread.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LevelDialog.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LevelDialog.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LogicFeeder.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LogicFeeder.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="SessionEvent.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="SessionEvent.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="SessionThread.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="SessionThread.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="SpectrumAnalyzerPanel.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="SpectrumAnalyzerPanel.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="SpectrumFeeder.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="SpectrumFeeder.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="FrequencyViewApp.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotctrl.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotcurv.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotdata.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotdefs.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotdraw.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotmark.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotprnt.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/range.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/src/plotctrl.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/src/plotcurv.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/src/plotdata.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/src/plotdraw.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/src/plotmark.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/src/plotprnt.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxplotctrl/wxplotctrl/src/range.cpp">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxsmith/CenterFreqDialog.wxs">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxsmith/DevConnDialog.wxs">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="wxsmith/LevelDialog.wxs">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Extensions>
+			<wxsmith version="1">
+				<resources>
+					<wxDialog wxs="wxsmith/DevConnDialog.wxs" src="DevConnDialog.cpp" hdr="DevConnDialog.h" fwddecl="0" i18n="1" name="DevConnDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/LevelDialog.wxs" src="LevelDialog.cpp" hdr="LevelDialog.h" fwddecl="0" i18n="1" name="LevelDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/CenterFreqDialog.wxs" src="CenterFreqDialog.cpp" hdr="CenterFreqDialog.h" fwddecl="0" i18n="1" name="CenterFreqDialog" language="CPP" />
+					<wxDialog wxs="wxsmith/ImportOptionsDialog.wxs" src="ImportOptionsDialog.cpp" hdr="ImportOptionsDialog.h" fwddecl="0" i18n="1" name="ImportOptionsDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
