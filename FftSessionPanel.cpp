@@ -63,12 +63,12 @@ void FftSessionPanel::initPlotControl()
 {
     plotCtrl_ = new wxPlotCtrl(this, wxID_ANY);
 
-    plotCtrl_->SetXAxisLabel("f [Hz]");
-    plotCtrl_->SetYAxisLabel("a [dBfs]");
-    plotCtrl_->SetShowXAxis(true);
-    plotCtrl_->SetShowYAxis(true);
-    plotCtrl_->SetShowXAxisLabel(true);
-    plotCtrl_->SetShowYAxisLabel(true);
+    plotCtrl_->SetBottomAxisLabel("f [Hz]");
+    plotCtrl_->SetLeftAxisLabel("a [dBfs]");
+    plotCtrl_->SetShowBottomAxis(true);
+    plotCtrl_->SetShowLeftAxis(true);
+    plotCtrl_->SetShowBottomAxisLabel(true);
+    plotCtrl_->SetShowLeftAxisLabel(true);
     plotCtrl_->SetShowKey(false);
     plotCtrl_->SetShowPlotTitle(false);
     plotCtrl_->SetDrawGrid();
@@ -175,11 +175,10 @@ void FftSessionPanel::onPlotCtrlEvent(wxPlotCtrlEvent& event)
     }
     else
     {
-         wxLogMessage(wxString::Format(wxT("%s xy(%g %g) CurveIndex %d, IsDataCurve %d DataIndex %d, MouseFn %d\n"),
+         wxLogMessage(wxString::Format(wxT("%s xy(%g %g) CurveIndex %d, DataIndex %d, MouseFn %d\n"),
             "wxPlotCtrlEvent::GetEventName(eventType).c_str()",
             event.GetX(), event.GetY(), event.GetCurveIndex(),
-            (int)event.IsDataCurve(), event.GetCurveDataIndex(),
-            event.GetMouseFunction()));
+            event.GetCurveDataIndex(), event.GetMouseFunction()));
     }
 }
 

@@ -118,6 +118,10 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
+		<Unit filename="FrequencyViewApp.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
 		<Unit filename="FrequencyViewMain.cpp">
 			<Option target="Debug" />
 			<Option target="Release" />
@@ -207,23 +211,11 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="FrequencyViewApp.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
 		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotctrl.h">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotcurv.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
 		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotdata.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotdefs.h">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
@@ -235,19 +227,11 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
-		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/plotprnt.h">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
 		<Unit filename="wxplotctrl/wxplotctrl/include/wx/plotctrl/range.h">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="wxplotctrl/wxplotctrl/src/plotctrl.cpp">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="wxplotctrl/wxplotctrl/src/plotcurv.cpp">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
@@ -260,10 +244,6 @@
 			<Option target="Release" />
 		</Unit>
 		<Unit filename="wxplotctrl/wxplotctrl/src/plotmark.cpp">
-			<Option target="Debug" />
-			<Option target="Release" />
-		</Unit>
-		<Unit filename="wxplotctrl/wxplotctrl/src/plotprnt.cpp">
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
